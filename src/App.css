@@ -1,0 +1,174 @@
+/* .video-pane {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+} */
+
+body{
+background-color: black;
+color: rgb(228, 248, 248);
+}
+.header1{
+  /* background-color: #007bff; */
+  width: 100%;
+  
+  font-size: 2rem;
+  /* text-align: center; */
+  background-color: #506d72;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  
+}
+.logos{
+  display: flex;
+  align-items: center;
+  margin-right: auto ;
+  margin-left: 10px;
+}
+h3{
+  text-align: center;
+  margin-right: 37%;
+}
+h4{
+  text-align: center;
+  margin-left: 160px;
+}
+.logo{
+  height: 50px;
+  margin-top: 8px;
+  margin-right: 10px;
+  padding: 5px;
+}
+/* .video-column {
+  margin:0 10px;
+  flex-basis: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 10px;
+
+} */
+
+/* 
+.video-row{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+} */
+
+.forh3{
+  text-align: center;
+}
+
+.textt{
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the container height to the full viewport height */
+  overflow: hidden; /* Hide any overflow */
+}
+video::-webkit-media-controls {
+  display: none;
+}
+.video-pane {
+  position: relative;
+  flex: 1; /* Make the video panes grow and shrink equally */
+  overflow-x: hidden;
+}
+
+
+.video-row {
+  display: flex;
+  align-items: center;
+}
+
+.video-column-container {
+  display: flex;
+  width: calc(100% - 200px); /* Subtract the width of the first column */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 20px; /* Add some spacing between the first column and the scrollable columns */
+}
+
+.video-column {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width of each video column */
+  margin-right: 20px; /* Adjust the spacing between columns */
+}
+
+.scroll-button>button {
+  position: absolute;
+  top: 400px;
+  /* bottom: 20%; */
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: black ;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  height: 400px;
+}
+.scroll-button>button:hover{
+  background-color: black;
+}
+
+.bottom-pane {
+  position: relative;
+  flex: 1; /* Make the bottom pane grow and shrink equally */
+  overflow-x: hidden;
+}
+
+.bottom-row {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-column-container {
+  display: flex;
+  width: calc(100% - 200px); /* Subtract the width of the first column */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 20px; /* Add some spacing between the first column and the scrollable columns */
+}
+
+.bottom-column {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width of each bottom column */
+  margin-right: 20px; /* Adjust the spacing between columns */
+}
+
+.bottom-scroll-button>button {
+  position: absolute;
+  top: 720px;
+  /* bottom: 20%; */
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: black ;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  height: 400px;
+}
+.bottom-scroll-button>button:hover{
+  background-color: black;
+}
